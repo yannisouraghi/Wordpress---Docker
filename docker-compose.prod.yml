@@ -10,3 +10,28 @@ services:
       WORDPRESS_DB_USER: client1-wordpress
       WORDPRESS_DB_PASSWORD: cesi
       WORDPRESS_DB_NAME: client1-wordpress
+    networks:
+      - client1-network
+  bdd:
+    container_name: client1-sql
+    image: mariadb:lts
+    restart: always
+    environment: 
+      MARIADB_ROOT_PASSWORD: cesi
+    networks:
+      - client1-network
+    volumes:
+      - client1-volbdd:/var/lib/mysql/
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+networks:
+  client1-network:
+    driver: bridge
+
+volumes:
+  client1-volbdd:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: C:/Users/ourag/Desktop/DockerWordPress/bdd

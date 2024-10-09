@@ -9,6 +9,8 @@ services:
       - client1-network
     volumes:
       - client1-volbdd:/var/lib/mysql/
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
   adminer:
     image: adminer
     restart: always
@@ -16,6 +18,7 @@ services:
     - 8080:8080
     networks:
     - client1-network
+    
   wordpress:
     depends_on:
     - bdd
