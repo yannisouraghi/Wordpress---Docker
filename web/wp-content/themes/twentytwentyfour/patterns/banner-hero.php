@@ -18,6 +18,11 @@
 		<h1 class="wp-block-heading has-text-align-center has-x-large-font-size"><?php echo esc_html_x( 'A commitment to innovation and sustainability', 'Heading of the hero section', 'twentytwentyfour' ); ?></h1>
 		<!-- /wp:heading -->
 
+		<?php
+
+		var_dump('ceci est un test ');
+		 ?>
+
 		<!-- wp:spacer {"height":"1.25rem"} -->
 		<div style="height:1.25rem" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
