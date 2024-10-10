@@ -4,7 +4,7 @@ services:
     image: yannis76/prod-web:0.0.1
     container_name: wordpress-prod
     ports:
-      - "8082:80"
+      - "8081:80"
     environment:
       WORDPRESS_DB_HOST: client1-sql
       WORDPRESS_DB_USER: client1-wordpress
