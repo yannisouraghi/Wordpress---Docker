@@ -3,7 +3,7 @@
 # Configuration
 DOCKER_USER="yannis76"
 IMAGE_NAME="prod-web"
-VERSION="0.0.3"  
+VERSION="0.0.4"  
 DOCKERFILE_PATH="./Dockerfile"
 PROD_COMPOSE_FILE="docker-compose.prod.yml"
 
