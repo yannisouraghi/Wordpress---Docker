@@ -34,4 +34,4 @@ volumes:
     driver_opts:
       o: bind
       type: none
-      device: C:/Users/ourag/Desktop/DockerWordPress/bdd
+      device: ./bdd

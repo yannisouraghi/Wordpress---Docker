@@ -20,7 +20,7 @@
 
 		<?php
 
-		//var_dump('ceci est un test ');
+		var_dump('ceci est un test ');
 		 ?>
 
 		<!-- wp:spacer {"height":"1.25rem"} -->
