@@ -22,6 +22,14 @@
 
 - git push origin prod
 
+# Build image
+
+- docker build -t yannis76/prod-web:{tag} -f .
+
+- docker login --username yannis76
+
+- docker push yannis76/prod-web:{tag}
+
 # Connection en ssh a la VM 
 
 - ssh username@ip
